@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>My own Calculator</title>
+        <style>
+            .container {
+                margin: 5% auto;
+                text-align: center;
+                <!--border: 2px solid black; -->
+            }
+            .all {
+                display: inline-block;
+            }
+            .screen {
+                width: 238px;
+                height: 65px;
+                padding-right: 10px;
+                background-color: black;
+                color: white;
+            }
+            .screen-text {
+                font-family: arial;
+                font-size: 50px;
+                text-align: right;
+                padding-top: 10px;
+                padding-right: 10px;
+            }
+            .buttons {
+                width: 248px;
+                height: auto;
+            }
+            .button-right {
+                border: 1px solid #222222;
+                color: white;
+                background-color: rgba(252, 114, 1, 0.836);
+            }
+            .button-rest {
+                border: 1px solid #222222;
+                color: black;
+            }
+            .first {
+                background-color: #8e8e8e;
+            }
+            .row {
+                /* border: 1px solid green; */
+                width: auto;
+                height: 66px;
+                background-color: #b0b0b0;
+            }
+            .col {
+                width: 60px;
+                height: auto;
+                float: left;
+                text-align: center;
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+            .zero {
+                width: 122px;
+                height: auto;
+                float: left;
+                text-align: center;
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+            .text {
+                font-family: arial;
+                font-size: 18pt;
+            }
+
+            .header {
+                /* border: 1px solid red; */
+                background-color: #212121;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                color: white;
+                font-family: arial;
+                font-size: 8pt;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                letter-spacing: 1.5px;
+                text-align: left;
+            }
+            .red {
+                background-color: rgba(200, 0, 0, 0.836);
+            }
+            .indicator{
+                background-color: rgba(170, 0, 0, 0.836);
+                border: 2px solid rgba(170, 0, 0, 0.836);
+                width: 5pt;
+                height: 5pt;
+                border-radius: 5px;
+                float: left;
+                margin-top: 1.2px;
+                margin-left: 20pt;
+                margin-right: 20px;
+                padding-right: 0;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        
+            <div class="buttons all">
+                <div class="header">
+                    HANSEL CALCULATOR
+                    <div class="indicator"></div>    
+                </div>
+                <div class="screen screen-text">
+                    0
+                </div>
+                <div class="row">
+                    <div class="col text button-rest first quit red">
+                            ON
+                    </div>
+                    <div class="col text button-rest first clear">
+                            AC
+                    </div>
+                    <div class="col text button-rest first perc">
+                            %
+                    </div>
+                    <div class="col text button-right divide">
+                            /
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col text button-rest num7">
+                            7
+                    </div>
+                    <div class="col text button-rest num8">
+                            8
+                    </div>
+                    <div class="col text button-rest num9">
+                            9
+                    </div>
+                    <div class="col text button-right multiply">
+                            X
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text button-rest num4">
+                            4
+                    </div>
+                    <div class="col text button-rest num5">
+                            5
+                    </div>
+                    <div class="col text button-rest num6">
+                            6
+                    </div>
+                    <div class="col text button-right subtract">
+                        -
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text button-rest num1">
+                            1
+                    </div>
+                    <div class="col text button-rest num2">
+                            2
+                    </div>
+                    <div class="col text button-rest num3">
+                            3
+                    </div>
+                    <div class="col text button-right add">
+                            +
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text button-rest zero">0
+                </div>
+                <div class="col text button-rest dot">
+                        .
+                </div>
+                <div class="col text button-right equal">
+                        =
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script src= "calcScript.js">
+        </script>
+    </body>
+</html>
